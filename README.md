@@ -87,8 +87,8 @@ Run the `innocent` binary with one of the available commands:
 ./innocent decrypt-key --privatekey ./keys/private.pem --encryptedkey ./keys/private.pem.enc
 ```
 
-* `--privatekey`: Output path for decrypted private key
-* `--encryptedkey`: Path to encrypted private key file
+* `--privatekey`: Path to the private key used to decrypt the encrypted private key file
+* `--encryptedkey`: Path to the encrypted private key file (e.g. private.pem.enc)
 
 ---
 
