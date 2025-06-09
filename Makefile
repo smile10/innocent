@@ -16,7 +16,7 @@ all: build-all
 # Build for current system
 build:
 	@echo "Building for current system..."
-	GOOS=$(shell go env GOOS) GOARCH=$(shell go env GOARCH) \
+	GOOS=$(shell go env GOOS) GOARCH=$(shell go env GOARCH) CGO_ENABLED=0 \
 		go build -ldflags="-X main.version=$(VERSION)" -o $(BIN_DIR)/$(APP_NAME) main.go
 	@echo "Built: $(BIN_DIR)/$(APP_NAME)"
 
